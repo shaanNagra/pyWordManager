@@ -3,14 +3,30 @@ a simple password manager written in python.
 
 pyWordManager is a locally run password manager via the terminal. Design decisions were made utilising [OWASP](https://owasp.org/) recommended implementations.
 
-![context level design](./readme.assets/f.png)
+
+
+[TOC]
 
 
 
-![container level design](./readme.assets/sdfa.png)
 
-![component level: create user](./readme.assets/sadsaf.png)
+# Design
+## Context Level
 
-![component level: save password](./readme.assets/savepasswordcontainer.png)
+<img align="right" class="context level design" src="./readme.assets/f.png" style="zoom: 60%;">
 
-![component level: get password](./readme.assets/unnamed.png)
+---
+
+
+<br clear="right"/>
+
+## Container Level
+<img src="./readme.assets/sdfa.png" alt="container level design" />
+
+## Component Level
+<img src="./readme.assets/sadsaf.png" alt="component level: create user" />
+
+
+<img src="./readme.assets/savepasswordcontainer.png" alt="component level: save password" style="zoom: 80%;"/>
+
+<img src="./readme.assets/unnamed.png" alt="component level: get password" style="zoom: 80%;" />
