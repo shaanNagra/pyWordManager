@@ -13,11 +13,11 @@ pyWordManager is a locally run password manager via the terminal. Design decisio
 # Design
 ## Context Level
 
-<img align="right" class="context level design" src="./readme.assets/f.png" style="zoom: 40%;">
+<img align="left" class="context level design" src="./readme.assets/f.png" style="zoom: 80%">
 
 
 
-<br clear="right"/>
+<br clear="left"/>
 
 ## Container Level
 <img src="./readme.assets/sdfa.png" alt="container level design" />
