@@ -75,8 +75,9 @@ be able to see all keys in the file (after authentication) if needed.
 <img align="right" src="./readme.assets/unnamed.png" alt="component level: get password" style="width:450px"/>
 
 #### Get Password Component
+<br clear="right"/>
 
-
+---
 ## References
 Authentication encryption. (n.d.).
 https://support.1password.com/authentication-encryption/
