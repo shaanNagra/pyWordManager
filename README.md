@@ -3,7 +3,7 @@ a simple password manager written in python.
 
 pyWordManager is a locally run password manager via the terminal. Design decisions were made utilising [OWASP](https://owasp.org/) recommended implementations.
 
-## Design Decisions
+## Design
 
 ### Master Password Authentication
 Authentication is done using Galois/Counter Mode (GCM) tag when decrypting the file itself.
@@ -38,6 +38,15 @@ OWASP cheat sheet [[3]](https://cheatsheetseries.owasp.org/cheatsheets/Cryptogra
 ```
 iv = os.urandom(16)
 ```
+
+### Password Storage
+The passwords are encrypted and then inserted into a JSON string as a value to the key that
+is set. The string is then encrypted using the master password and stored as a file.
+Therefore to see all passwords, you have to decrypt them individually as well as the entire
+file.
+
+The key is set by the user when creating passwords. When getting a password user should
+be able to see all keys in the file (after authentication) if needed.
 
 
 # Design
