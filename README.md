@@ -75,3 +75,13 @@ be able to see all keys in the file (after authentication) if needed.
 <img align="right" src="./readme.assets/unnamed.png" alt="component level: get password" style="width:450px"/>
 
 #### Get Password Component
+
+
+## References
+Authentication encryption. (n.d.).
+https://support.1password.com/authentication-encryption/
+Cryptographic Storage Cheatsheet. (n.d.).
+https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html
+Random Number Generation. (n.d.).
+https://cryptography.io/en/latest/random-numbers/
+
