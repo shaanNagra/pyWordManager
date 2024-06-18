@@ -1,6 +1,8 @@
 # pyWordManager
 a simple password manager written in python.
 
+![example of getting password from pyWordManager](./readme.assets/Screenshot%20from%202024-06-18%2019-54-54.png)
+
 pyWordManager is a locally run password manager via the terminal. Design decisions were made utilising [OWASP](https://owasp.org/) recommended implementations.
 
 ## Design
