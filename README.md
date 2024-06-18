@@ -33,8 +33,8 @@ string.punctuation
 return password
 ```
 The secret module implements the os modules’ random number functions. Which is stated to
-be cryptographically secure [3](https://cryptography.io/en/latest/random-numbers/). And is recommended in the
-OWASP cheat sheet [3](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html).urandom was used to get iv and salts.
+be cryptographically secure [[2]](https://cryptography.io/en/latest/random-numbers/). And is recommended in the
+OWASP cheat sheet [[3]](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html).urandom was used to get iv and salts.
 ```
 iv = os.urandom(16)
 ```
