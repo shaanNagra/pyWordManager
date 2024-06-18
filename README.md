@@ -9,12 +9,15 @@ pyWordManager is a locally run password manager via the terminal. Design decisio
 Authentication is done using Galois/Counter Mode (GCM) tag when decrypting the file itself.
 If decryption fails the exception handler catches it and returns null, indicating that
 authentication has failed.
+
 The choice of having an authentication system that does not check hash as it would
 traditionally. this method was chosen as it would then required to store it and is similar to
 how other local password managers do authentication [Authentication encryption]
+
 The key for decryption is then the hash of the master password which is created using a key
 deriving function. PBKDF2 was the initial choice but was then replaced by Argon2 with a
 hash length of 256bit.
+
 GCM mode was selected as OWASP states ”should be used as a first preference”
 
 ### Pseudo-Random Number Generator
