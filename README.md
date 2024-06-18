@@ -3,11 +3,38 @@ a simple password manager written in python.
 
 pyWordManager is a locally run password manager via the terminal. Design decisions were made utilising [OWASP](https://owasp.org/) recommended implementations.
 
+## Design Decisions
 
+### Master Password Authentication
+Authentication is done using Galois/Counter Mode (GCM) tag when decrypting the file itself.
+If decryption fails the exception handler catches it and returns null, indicating that
+authentication has failed.
+The choice of having an authentication system that does not check hash as it would
+traditionally. this method was chosen as it would then required to store it and is similar to
+how other local password managers do authentication [Authentication encryption]
+The key for decryption is then the hash of the master password which is created using a key
+deriving function. PBKDF2 was the initial choice but was then replaced by Argon2 with a
+hash length of 256bit.
+GCM mode was selected as OWASP states ”should be used as a first preference”
 
-[TOC]
-
-
+### Pseudo-Random Number Generator
+For generating passwords the secret Modules choice function was used. To select a
+character from the provided options
+```
+for x in range(length):
+password += secrets.choice(
+string.ascii_letters +
+string.digits +
+string.punctuation
+)
+return password
+```
+The secret module implements the os modules’ random number functions. Which is stated to
+be cryptographically secure [Random Number Generation]. And is recommended in the
+OWASP cheat sheet [Cryptographic Storage Cheatsheet.].urandom was used to get iv and salts.
+```
+iv = os.urandom(16)
+```
 
 
 # Design
