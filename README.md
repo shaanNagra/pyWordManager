@@ -12,7 +12,7 @@ authentication has failed.
 
 The choice of having an authentication system that does not check hash as it would
 traditionally. this method was chosen as it would then required to store it and is similar to
-how other local password managers do authentication [Authentication encryption]
+how other local password managers do authentication [1](https://support.1password.com/authentication-encryption/)
 
 The key for decryption is then the hash of the master password which is created using a key
 deriving function. PBKDF2 was the initial choice but was then replaced by Argon2 with a
@@ -33,8 +33,8 @@ string.punctuation
 return password
 ```
 The secret module implements the os modules’ random number functions. Which is stated to
-be cryptographically secure [Random Number Generation]. And is recommended in the
-OWASP cheat sheet [Cryptographic Storage Cheatsheet.].urandom was used to get iv and salts.
+be cryptographically secure [3](https://cryptography.io/en/latest/random-numbers/). And is recommended in the
+OWASP cheat sheet [3](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html).urandom was used to get iv and salts.
 ```
 iv = os.urandom(16)
 ```
