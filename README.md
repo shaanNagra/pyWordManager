@@ -49,30 +49,29 @@ The key is set by the user when creating passwords. When getting a password user
 be able to see all keys in the file (after authentication) if needed.
 
 
-# Design
-## Context Level
+### Context Level
 
 <img align="left" class="context level design" src="./readme.assets/f.png" style="width:180px">
 
 <br clear="left"/>
 
 
-## Container Level
+### Container Level
 <img src="./readme.assets/sdfa.png" alt="container level design" style="width:450px"/>
 
 ## Component Level
 <img align="right" src="./readme.assets/sadsaf.png" alt="component level: create user" style="width:450px"/>
 
-### Create User Component
+#### Create User Component
 
 <br clear="right"/>
 
 <img align="right" src="./readme.assets/savepasswordcontainer.png" alt="component level: save password" style="width:450px"/>
 
-### Save Password Component
+#### Save Password Component
 
 <br clear="right"/>
 
 <img align="right" src="./readme.assets/unnamed.png" alt="component level: get password" style="width:450px"/>
 
-### Get Password Component
+#### Get Password Component
